@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <form action="/action_page.php">
+        <fieldset>
+        <legend>Los ladronzuelos de bicicletas</legend>
+        <!-- Imput Text/Numer-->
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" autofocus placeholder="dd/mm/aaaa"><br><br>
+        
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" placeholder="Hora robada"><br><br>
+
+        <label for="color" tabindex="-1">Color de la bicicleta?:</label>
+        <input type="color" id="color" name="color" placeholder="Color bicicleta"><br><br>
+        
+        <label for="rango">Rango de precio de la bicicleta?:</label>
+        <input type="range" min="0" max="10" id="rango" name="rango" step="2" ><br><br>
+
+        <ul><label for="tipo">Tipo de bicicleta:</label><br><br>
+
+        <!-- Selector -->
+        <li><label for="paseo">Paseo</label></li>
+        <select id="paseo" name="paseo">
+            <option value="senorial">Señorial</option>
+            <option value="Anti-plebeyos" selected>Anti-plebeyos</option>
+            <option value="porencimadelhombro">PorEncimaDelHombro</option>
+        </select><br><br>
+
+        <li><label for="montaña">Montaña</label></li>
+        <select id="montaña" name="montaña">
+            <option value="gamusinos">Gamusinos</option>
+            <option value="hueleflores">Hueleflores premium</option>
+            <option value="fango">Fango lover</option>
+          </select><br><br>
+
+        <li><label for="carreras">Carreras</label></li>
+        <select id="carreras" name="carreras">
+            <option value="metroymedio">Metroymedio</option>
+            <option value="tarde">3 de la tarde. Fluorescente edition              </option>
+            <option value="grupitors" selected>Grupitors</option>
+        </select>
+        </ul><br><br>
+
+        <!--Checkbox -->
+        <legend>Accesorios:</legend>
+        <input type="checkbox" id="ruedines" name="ruedines" value="Ruedines">
+        <label for="ruedines"> Ruedines</label><br>
+        
+        <input type="checkbox" id="pegatinas" name="pegatinas" value="Pegatinas">
+        <label for="pegatinas"> Pegatinas</label><br>
+        
+        <input type="checkbox" id="cestita" name="cestita" value="Cestita">
+        <label for="cestita"> Cestita</label><br>
+
+        <input type="checkbox" id="bomba" name="bomba" value="Bomba">
+        <label for="bomba"> Bomba de aire</label><br>
+        
+        <input type="checkbox" id="timbre" name="timbre" value="Timbre">
+        <label for="timbre"> Timbre</label><br>
+
+        <input type="checkbox" id="foco" name="foco" value="Foco">
+        <label for="foco"> Foco</label><br><br><br>
+
+
+        <!-- Datalist -->
+        <label for="marca">¿Qué marca era?</label>
+        <input list="marcas" name="marca" id="marca">
+        
+        <datalist id="marcas">
+            <option value="Specialized">
+            <option value="Trek">
+            <option value="Merida">
+            <option value="Scott">
+            <option value="Giant">
+            <option value="Cube">
+            <option value="Lapierre">
+            <option value="Orbea">
+            <option value="Bmc">
+            <option value="Canyon">
+            <option value="Look">
+            <option value="Protek">
+            <option value="Megamo">
+            <option value="Pinarello">
+            <option value="Bianchi">
+            <option value="Bh">
+            <option value="Factor">
+            <option value="Ghost">
+            <option value="Cervélo">
+            <option value="Argon">
+        </datalist>
+        <!--Botones Submit/Reset-->
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </fieldset>
+
+    </form>
+</body>
+</html>
